@@ -1,0 +1,75 @@
+:root{
+    --primary : salmon;
+}
+.main_div{
+    background-color :wheat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center_div{
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 45px;
+}
+
+.heading {
+    background-color: var(--primary);
+    margin-top: 40px;
+    padding: 10px;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    color : white;
+}
+.body{
+    text-align: center;
+
+}
+.count{
+    font-size: 40px;
+    margin: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.btn_groups{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    padding: 10px;
+    font-size: 20px;
+    border : none;
+    background-color:mediumspringgreen;
+    border-radius: 10px;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 600px) {
+    .center_div{
+      width: 80%;
+      max-height: 400px;
+    }    
+  }
+
+  @media only screen and (max-width: 400px) {
+    .center_div{
+      width: 80%;
+      max-height: 400px;
+    }
+    .btn_groups{
+        display: flex;
+        flex-direction: column;
+        padding : 10px;
+        
+    }
+    button {
+        margin: 10px;;
+    }    
+  }
